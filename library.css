@@ -26,11 +26,7 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 /*---- colores de fondo ----*/
 
     --bg-1: #111111;
-    --bg-2: #F4F4F4;
-    --bg-3: #DA291C;
-    --bg-4: #B52217;
-    --bg-5: #FCF3F3;
-    --bg-6: #FFC5C1;
+    --bg-2: #DF9438;
     
 /*---- tamaño de fuente ----*/
 
@@ -105,7 +101,19 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
     flex-direction: column;
 }
 
+.flex-center-self{
+    display: flex;
+    justify-self: center;
+}
 
+.align-self{
+    display: flex;
+    justify-self: center;
+}
+
+.max-width-60{
+    max-width: 75rem;
+}
 
 .flex-direction-row, .fdr{ flex-direction: row; }
 
@@ -126,6 +134,12 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 
 /*---- Posicionamiento ----*/
 
+.absolute{ position: absolute; }
+.relative{ position: relative; }
+
+/* .zindex2{z-index: 2;} */
+
+
 .jus-content-center, .jcc{ justify-content: center;}
 .jus-content-end, .jce{ justify-content: end; }
 .jus-content-start, .jcs{ justify-content: start; }
@@ -138,13 +152,10 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 .aling-items-start, .ais{ align-items: start; }
 .aling-content-center, .acc{ align-content: center; }
 
-
-
-
 /*---- Paddings ----*/
 
 .padding-width{
-    padding-inline: 18%;
+    padding-inline: 19%;
 }
 
 
@@ -182,6 +193,7 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 .padding-right-4, .pr4{ padding-inline-end: var(--size-4);}
 .padding-right-5, .pr5{ padding-inline-end: var(--size-5);}
 .padding-right-6, .pr6{ padding-inline-end: var(--size-6);}
+.padding-right-7, .pr7{ padding-left: 10rem;}
 
 .padding-top-1, .pt1{ padding-block-start: var(--size-1);}
 .padding-top-2, .pt2{ padding-block-start: var(--size-2);}
@@ -189,6 +201,7 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 .padding-top-4, .pt4{ padding-block-start: var(--size-4);}
 .padding-top-5, .pt5{ padding-block-start: var(--size-5);}
 .padding-top-6, .pt6{ padding-block-start: var(--size-6);}
+.padding-top-7, .pt7{ padding-block-start: 8rem;}
 
 .padding-bottom-1, .pbt1{ padding-block-end: var(--size-1);}
 .padding-bottom-2, .pbt2{ padding-block-end: var(--size-2);}
@@ -206,47 +219,29 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 .margin-5, .m5{ margin: var(--size-5);}
 .margin-6, .m6{ margin: var(--size-6);}
 
-.margin-inline-1, .mi1{ margin-inline: var(--size-1);}
-.margin-inline-2, .mi2{ margin-inline: var(--size-2);}
-.margin-inline-3, .mi3{ margin-inline: var(--size-3);}
-.margin-inline-4, .mi4{ margin-inline: var(--size-4);}
-.margin-inline-5, .mi5{ margin-inline: var(--size-5);}
-.margin-inline-6, .mi6{ margin-inline: var(--size-6);}
+.margin-top-2 { margin-top: var(--size-2);}
+.margin-top-3 { margin-top: var(--size-3);}
+.margin-top-4 { margin-top: var(--size-4);}
+.margin-top-5 { margin-top: var(--size-5);}
+.margin-top-6 { margin-top: var(--size-6);}
+.margin-top-7 { margin-top: 10rem;}
 
-.margin-block-1, .mbl1{ margin-block: var(--size-1);}
-.margin-block-2, .mbl2{ margin-block: var(--size-2);}
-.margin-block-3, .mbl3{ margin-block: var(--size-3);}
-.margin-block-4, .mbl4{ margin-block: var(--size-4);}
-.margin-block-5, .mbl5{ margin-block: var(--size-5);}
-.margin-block-6, .mbl6{ margin-block: var(--size-6);}
+.margin-bottom-1, .mb1{ margin-bottom: var(--size-1);}
+.margin-bottom-2, .mb2{ margin-bottom: var(--size-2);}
 
-.margin-left-1, .ml1{ margin-inline-start: var(--size-1);}
-.margin-left-2, .ml2{ margin-inline-start: var(--size-2);}
-.margin-left-3, .ml3{ margin-inline-start: var(--size-3);}
-.margin-left-4, .ml4{ margin-inline-start: var(--size-4);}
-.margin-left-5, .ml5{ margin-inline-start: var(--size-5);}
-.margin-left-6, .ml6{ margin-inline-start: var(--size-6);}
+.margin-inline-1{ margin-inline: var(--size-1);}
+.margin-inline-2{ margin-inline: 2rem;}
 
-.margin-right-1, .mr1{ margin-inline-end: var(--size-1);}
-.margin-right-2, .mr2{ margin-inline-end: var(--size-2);}
-.margin-right-3, .mr3{ margin-inline-end: var(--size-3);}
-.margin-right-4, .mr4{ margin-inline-end: var(--size-4);}
-.margin-right-5, .mr5{ margin-inline-end: var(--size-5);}
-.margin-right-6, .mr6{ margin-inline-end: var(--size-6);}
 
-.margin-top-1, .mt1{ margin-block-start: var(--size-1);}
-.margin-top-2, .mt2{ margin-block-start: var(--size-2);}
-.margin-top-3, .mt3{ margin-block-start: var(--size-3);}
-.margin-top-4, .mt4{ margin-block-start: var(--size-4);}
-.margin-top-5, .mt5{ margin-block-start: var(--size-5);}
-.margin-top-6, .mt6{ margin-block-start: var(--size-6);}
 
-.margin-bottom-1, .mbt1{ margin-block-end: var(--size-1);}
-.margin-bottom-2, .mbt2{ margin-block-end: var(--size-2);}
-.margin-bottom-3, .mbt3{ margin-block-end: var(--size-3);}
-.margin-bottom-4, .mbt4{ margin-block-end: var(--size-4);}
-.margin-bottom-5, .mbt5{ margin-block-end: var(--size-5);}
-.margin-bottom-6, .mbt6{ margin-block-end: var(--size-6);}
+/*---- Border ----*/
+
+.border-1{border: 1px solid var(--text-3);}
+.border-inline-1{border-inline: 2px solid var(--text-3);}
+.border-block-1{border-block: 2px solid var(--text-3);}
+.border-right-1{border-left: 1px solid var(--text-3);}
+.border-left-1{border-right: 1px solid var(--text-3);}
+.border-bottom-1{border-bottom: 1px solid var(--text-3);}
 
 /*---- Border radius ----*/
 
@@ -256,16 +251,11 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 .border-radius-4, .br4{ border-radius: var(--radius-4); }
 .border-radius-5, .br5{ border-radius: var(--radius-5); }
 .border-radius-6, .br6{ border-radius: var(--radius-6); }
-/* presentacion */
 
 /*---- Background color ----*/
 
-.back-color-1, .bg1{ background-color: var(--bg-1); }
-.back-color-2, .bg2{ background-color: var(--bg-2); }
-.back-color-3, .bg3{ background-color: var(--bg-3); }
-.back-color-4, .bg4{ background-color: var(--bg-4); }
-.back-color-5, .bg5{ background-color: var(--bg-5); }
-.back-color-6, .bg6{ background-color: var(--bg-6); }
+.back-color-1, .bc1{ background-color: var(--bg-1); }
+.back-color-2, .bc2{ background-color: var(--bg-2); }
 
 /*---- Text color ----*/
 
@@ -279,12 +269,40 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 /*---- Tamaños ----*/
 
 
+.imgzize1{
+    width: 14.813rem;
+    height: 9.875rem;
+}
+
+.imgzize2{
+    width: 14.813rem;
+    height: 9.875rem;
+}
+
+.imgzize3{
+    width:  rem;
+    height: rem;
+}
+
 .width-fit, .wf{width: fit-content;}
 .width-100, .mw100{ width: 100%; }
 .width-1vh, .mw1vh{ width: 1vh; }
 .width-75r, .mw75r{ width: 74rem; }
-.max-width-1vh, .mw1vh{ max-width: 1vh; }
-.max-width-20r, .mw20r{ max-width: 33rem; }
+
+.max-width-1vh{ max-width: 1vh; }
+.max-width-20r{ max-width: 33rem; }
+.max-width-15r{ max-width: 25rem; }
+.max-width-27r{ max-width: 35rem; }
+
+.width-60por{ width: 60%; }
+.width-55por{ width: 58%; }
+.width-50por{ width: 50%; }
+.width-45por{ width: 47%; }
+.width-40por{ width: 40%; }
+.width-42por{ width: 42%; }
+.width-35por{ width: 35%; }
+.width-30por{ width: 30%; }
+.width-auto{ width: auto; }
 
 
 .height-1{height: 1rem;} 
@@ -306,10 +324,15 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 
 .line-height-1{line-height: 1}
 
+.bold{
+    font-weight: bold;
+}
+
 .letter-spacing-1{
     initial-letter-align: 5px;
 }
 
+.font-size-08 {font-size: .8rem;}
 .font-size-1 {font-size: var(--size-1);}
 .font-size-11 {font-size: var(--size-11);}
 .font-size-2 {font-size: var(--size-2);}
@@ -343,10 +366,6 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 /*---- Opacidad ----*/
 
 /*---- Responsive ----*/
-
-/*---- Bordes ----*/
-
-.border-bottom-1{border-bottom: 1px solid var(--text-3);}
 
 /*---- Textos (h1,p,a, span, etc)----*/
 

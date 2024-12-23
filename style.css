@@ -41,6 +41,9 @@
 
 }
 
+.haciaderecha15{
+    animation: animacionhaciaderecha 1.5s forwards;
+}
 
 .haciaderecha{
     animation: animacionhaciaderecha 2s forwards;
@@ -74,33 +77,134 @@
     }
 }
 
+.haciaarriba{
+    animation: animacionhaciaarriba 2s forwards;
+}
 
-
-
-
-
-
-
-
-
-/* .ul{ 
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: none;
+@keyframes animacionhaciaarriba {
+    0% {
+        transform: translateY(100%);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 
-.li{ 
-    width: 5rem;
-    padding: 1rem;
-    border: 1px solid white;
+.programming {
+    position: relative;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 3rem;
+}
+
+.programming::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('imagenes/programacion.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.cats{
+    position: relative;
+    margin-right: 1rem;
+    padding: 3rem;
+}
+
+.cats::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('imagenes/gato.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.guitar{
+    position: relative;
 
 }
 
-.li img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.guitar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('imagenes/guitarra.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+
+
+.philosophy::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('imagenes/filosofia.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.pickles::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('imagenes/pepinos.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* .formylabel{
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 4rem;
+    padding-top: 1rem;
 } */
+ .formstyle{
+    width: 100%;
+    height: 3.5rem;
+}
+.formsg{
+    width: 100%;
+    height: 10rem;
+}
+
+.formbutton{
+    height: 3.5rem;
+    border: none;
+    cursor: pointer;
+}
