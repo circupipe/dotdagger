@@ -420,6 +420,26 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
     .border-left-1{
         border: none;
     }
+    .width-50por{
+        width: 100%;
+    }
+    .padding-right-7{
+        padding-left: 2rem;
+    }
+    .padding-top-7{
+        padding-block-start: 2rem;
+    }
+    .margin-top-7{
+        margin-top: 4rem;
+    }
+
+
+}
+
+@media  (max-width:565px){
+    .height-100vh{
+        height: 60vh;
+    }
 
 
 }
