@@ -110,6 +110,9 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
     display: flex;
     justify-self: center;
 }
+.alignitems-fs{
+    align-items: flex-start
+}
 
 .max-width-60{
     max-width: 75rem;
@@ -204,7 +207,7 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 .padding-top-7, .pt7{ padding-block-start: 8rem;}
 
 .padding-bottom-1, .pbt1{ padding-block-end: var(--size-1);}
-.padding-bottom-2, .pbt2{ padding-block-end: var(--size-2);}
+.padding-bottom-2, .pbt2{ padding-bottom: var(--size-2);}
 .padding-bottom-3, .pbt3{ padding-block-end: var(--size-3);}
 .padding-bottom-4, .pbt4{ padding-block-end: var(--size-4);}
 .padding-bottom-5, .pbt5{ padding-block-end: var(--size-5);}
@@ -293,6 +296,16 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 .max-width-20r{ max-width: 33rem; }
 .max-width-15r{ max-width: 25rem; }
 .max-width-27r{ max-width: 35rem; }
+
+.width-1{
+    width: 2rem;
+    height: 2rem;
+}
+
+.width-2{
+    width: 4rem;
+    height: 4rem;
+}
 
 .width-60por{ width: 60%; }
 .width-55por{ width: 58%; }
@@ -386,3 +399,27 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 .yellow{background-color: yellow;}
 
 .purple{background-color: purple;}
+
+
+@media  (max-width:768px){
+    .padding-width{
+        padding-inline: 5%;
+    }
+    .padding-3{
+        padding: .5rem;
+    }
+    .font-size-6{
+        font-size: 2rem;
+    }
+    .font-size-11{
+        font-size: 1rem;
+    }
+    .height-100vh{
+        height: 80vh;
+    }
+    .border-left-1{
+        border: none;
+    }
+
+
+}

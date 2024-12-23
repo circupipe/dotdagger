@@ -55,7 +55,7 @@
 
 @keyframes animacionhaciaderecha {
     0% {
-        transform: translateX(-200%);
+        transform: translateX(-100%);
     }
     100% {
         transform: translateX(0);
@@ -77,20 +77,22 @@
     }
 }
 
-.haciaarriba{
+
+.haciaarriba {
+    opacity: 0;
     animation: animacionhaciaarriba 2s forwards;
 }
 
 @keyframes animacionhaciaarriba {
     0% {
         transform: translateY(100%);
-        opacity: 0%;
+        opacity: 0;
     }
     100% {
         transform: translateY(0);
+        opacity: 1;
     }
 }
-
 
 .programming {
     position: relative;
@@ -187,13 +189,6 @@
     z-index: -1;
 }
 
-/* .formylabel{
-    display: flex; 
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 4rem;
-    padding-top: 1rem;
-} */
  .formstyle{
     width: 100%;
     height: 3.5rem;
@@ -207,4 +202,26 @@
     height: 3.5rem;
     border: none;
     cursor: pointer;
+}
+
+.backfooter{
+    background-image: url('imagenes/fondofooter.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   }
+
+
+.link:hover{
+    color: var(--text-1);
+}
+
+.linkback:hover{
+    background-color: var(--text-1);
+}
+
+.socialicon{
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
 }
